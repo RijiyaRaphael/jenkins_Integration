@@ -28,6 +28,6 @@ node {
 
     stage('Analyse Results') {
         echo "Analyse results"
-        perfReport filterRegex: '', showTrendGraphs: true, sourceDataFiles: 'demo4.jtl'
+        perfReport filterRegex: '', showTrendGraphs: true, sourceDataFiles: 'Scripts/demo4.jtl'
     }
 }
