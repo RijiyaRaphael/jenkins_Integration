@@ -31,7 +31,7 @@ node {
         publishHTML([allowMissing: false,
                      alwaysLinkToLastBuild: false,
                      keepAll: false, 
-                     reportDir: 'Reports',
+                     reportDir: 'pipeline',
                      reportFiles: 'index.html',
                      reportName: 'report',
                      reportTitles: 'ctoperf Report'])
