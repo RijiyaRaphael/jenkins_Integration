@@ -28,5 +28,12 @@ node {
 
     stage('Analyse Results') {
         echo "Analyse results"
+        publishHTML([allowMissing: false,
+                     alwaysLinkToLastBuild: false,
+                     keepAll: false, 
+                     reportDir: 'Reports',
+                     reportFiles: 'index.html',
+                     reportName: 'report',
+                     reportTitles: 'ctoperf Report'])
     }
 }
