@@ -28,12 +28,12 @@ node {
 
     stage('Analyse Results') {
         echo "Analyse results"
-        publishHTML([target : [allowMissing: false,
+        publishHTML(target : [allowMissing: false,
                      alwaysLinkToLastBuild: true,
                      keepAll: true, 
                      reportDir: 'pipeline',
                      reportFiles: 'index.html',
                      reportName: 'report',
-                     reportTitles: 'ctoperf Report'])
+                     reportTitles: 'octoperf Report'])
     }
 }
