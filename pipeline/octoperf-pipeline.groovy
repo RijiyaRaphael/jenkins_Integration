@@ -28,5 +28,6 @@ node {
 
     stage('Analyse Results') {
         echo "Analyse results"
+        perfReport filterRegex: '', showTrendGraphs: true, sourceDataFiles: 'https://github.com/RijiyaRaphael/jenkins_Integration.gitScripts/demo4.jtl'
     }
 }
