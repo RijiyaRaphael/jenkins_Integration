@@ -21,7 +21,7 @@ node {
     }
 
     stage('Execute Performance Tests') {
-        dir("${WORKSPACE}/Scripts") {
+        dir("${WORKSPACE}\Scripts") {
             bat "c:/apache-jmeter/apache-jmeter/bin/jmeter.bat  -n -t jmeterdemo.jmx -l demo4.jtl"
         }
     }
