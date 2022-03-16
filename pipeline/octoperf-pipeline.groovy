@@ -28,9 +28,9 @@ node {
 
     stage('Analyse Results') {
         echo "Analyse results"
-        publishHTML([allowMissing: false,
-                     alwaysLinkToLastBuild: false,
-                     keepAll: false, 
+        publishHTML([target : [allowMissing: false,
+                     alwaysLinkToLastBuild: true,
+                     keepAll: true, 
                      reportDir: 'pipeline',
                      reportFiles: 'index.html',
                      reportName: 'report',
