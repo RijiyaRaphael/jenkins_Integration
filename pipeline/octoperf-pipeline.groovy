@@ -17,7 +17,7 @@ node {
 
     stage('Complete any setup steps') {
         echo "Complete set-up steps"
-        //echo "${octoperf_test_value}"
+        
     }
 
     stage('Execute Performance Tests') {
