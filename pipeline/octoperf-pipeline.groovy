@@ -22,7 +22,7 @@ node {
 
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}/Scripts") {
-            bat "F:/apache-jmeter-5.3/apache-jmeter-5.3/bin/jmeter.bat -n -t jmeterdemo.jmx -l demo4.jtl -Jthread=30"
+            bat "F:/apache-jmeter-5.3/apache-jmeter-5.3/bin/jmeter.bat -n -t jmeterdemo.jmx -l demo4.jtl -Jthread=40"
         }
     }
 
