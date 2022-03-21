@@ -8,10 +8,10 @@ node {
                 userRemoteConfigs: [
                         [
                                 url: "https://github.com/RijiyaRaphael/jenkins_Integration.git",
-                                credentialsId: "octoperf-user"
+                                credentialsId: "rijiya"
                         ]
                 ],
-                branches: [[name: "master"]]
+                branches: [[name: "maain"]]
         ], poll: false
     }
 
