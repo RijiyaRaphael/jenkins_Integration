@@ -11,7 +11,7 @@ node {
                                 credentialsId: "rijiya"
                         ]
                 ],
-                branches: [[name: "maain"]]
+                branches: [[name: "main"]]
         ], poll: false
     }
 
