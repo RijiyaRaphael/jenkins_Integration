@@ -22,11 +22,12 @@ node {
 
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}/scripts") {
-            bat "F:/apache-jmeter-5.3/apache-jmeter-5.3/bin/jmeter.bat -n -t jmeterdemo.jmx -l demo4.jtl"
+            bat "F:/apache-jmeter-5.3/apache-jmeter-5.3/bin/jmeter.bat -n -t jmeterdemo.jmx -l demo4.jtl -Jthread=50"
         }
     }
 
     stage('Analyse Results') {
+        perfReport filterRegex: '', showTrendGraphs: true, sourceDataFiles: 'Scripts/demo4.jtl'
         echo "Analyse results"
     }
 }
